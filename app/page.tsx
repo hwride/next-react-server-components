@@ -3,7 +3,8 @@ import Image from "next/image";
 export default function Home() {
     return (
         <main className='border p-4'>
-            <span>This is <code>page.tsx</code></span>
+            <div>This is <code>page.tsx</code></div>
+            <div>{new Date().toISOString()}</div>
             <Image
                 className="dark:invert"
                 src="/next.svg"

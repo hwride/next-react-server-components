@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Test1Page() {
   return (
-    <div className="border p-4 flex flex-col">
+    <div className="flex flex-col border p-4">
       <div>
         This is <code className="code-bright">static/page.tsx</code>
       </div>

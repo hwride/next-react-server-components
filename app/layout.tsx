@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased p-4">
+      <body className="p-4 antialiased">
         This is <code className="code-bright">app/layout.tsx</code>
         <div>{new Date().toISOString()}</div>
         {children}

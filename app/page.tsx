@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="border p-4 flex flex-col">
+    <main className="flex flex-col border p-4">
       <div>
         This is <code className="code-bright">app/page.tsx</code>
       </div>

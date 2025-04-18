@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,10 +13,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className='antialiased p-4'
-      >
-        This is <code className='code-bright'>app/layout.tsx</code>
+      <body className="antialiased p-4">
+        This is <code className="code-bright">app/layout.tsx</code>
         <div>{new Date().toISOString()}</div>
         {children}
       </body>

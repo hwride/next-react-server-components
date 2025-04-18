@@ -16,7 +16,7 @@ export default function RootLayout({
       <body
         className='antialiased p-4'
       >
-        This is <code>layout.tsx</code>
+        This is <code>app/layout.tsx</code>
         <div>{new Date().toISOString()}</div>
         {children}
       </body>

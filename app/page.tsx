@@ -12,10 +12,10 @@ export default function Home() {
                 height={38}
                 priority
             />
-            <div>This is <code>page.tsx</code></div>
+            <div>This is <code>app/page.tsx</code></div>
             <div>{new Date().toISOString()}</div>
-            <a href='/test-1'>/test-1 - web link</a>
-            <Link href='/test-1'>/test-1 - Next <code>{`<`}Link{`>`}</code></Link>
+            <a href='/static'>/static - web link</a>
+            <Link href='/static'>/static - Next <code>{`<`}Link{`>`}</code></Link>
         </main>
     );
 }

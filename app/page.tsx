@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col border p-4">
+    <main className="flex flex-col border p-3">
       <div>
         This is <code className="code-bright">app/page.tsx</code>
       </div>
@@ -14,6 +14,12 @@ export default function Home() {
         </code>
       </Link>
       <a href="/static">/static - web link</a>
+      <Link href="/nested-layout">
+        /nested-layout - Next{" "}
+        <code>
+          {`<`}Link{`>`}
+        </code>
+      </Link>
     </main>
   );
 }

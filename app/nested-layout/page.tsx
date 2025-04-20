@@ -4,7 +4,7 @@ export default function Test1Page() {
   return (
     <div className="flex flex-col border p-3">
       <div>
-        This is <code className="code-bright">app/static/page.tsx</code>
+        This is <code className="code-bright">app/nested-layout/page.tsx</code>
       </div>
       <div>{new Date().toISOString()}</div>
       <Link href="/">
@@ -13,7 +13,12 @@ export default function Test1Page() {
           {`<`}Link{`>`}
         </code>
       </Link>
-      <a href="/">/ - web link</a>
+      <Link href="/nested-layout/double-nested-layout">
+        /nested-layout/double-nested-layout - Next{" "}
+        <code>
+          {`<`}Link{`>`}
+        </code>
+      </Link>
     </div>
   );
 }

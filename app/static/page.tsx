@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DebugLink } from "@/components/DebugLink";
 
 export default function Test1Page() {
   return (
@@ -7,12 +8,7 @@ export default function Test1Page() {
         This is <code className="code-bright">app/static/page.tsx</code>
       </div>
       <div>{new Date().toISOString()}</div>
-      <Link href="/">
-        / - Next{" "}
-        <code>
-          {`<`}Link{`>`}
-        </code>
-      </Link>
+      <DebugLink href="/" />
       <a href="/">/ - web link</a>
     </div>
   );

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DebugLink } from "@/components/DebugLink";
 
 export default function Test1Page() {
   return (
@@ -7,18 +8,8 @@ export default function Test1Page() {
         This is <code className="code-bright">app/nested-layout/page.tsx</code>
       </div>
       <div>{new Date().toISOString()}</div>
-      <Link href="/">
-        / - Next{" "}
-        <code>
-          {`<`}Link{`>`}
-        </code>
-      </Link>
-      <Link href="/nested-layout/double-nested-layout">
-        /nested-layout/double-nested-layout - Next{" "}
-        <code>
-          {`<`}Link{`>`}
-        </code>
-      </Link>
+      <DebugLink href="/" />
+      <DebugLink href="/nested-layout/double-nested-layout" />
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { DebugLink } from "@/components/DebugLink";
 
 export default function Home() {
@@ -11,6 +10,7 @@ export default function Home() {
       <DebugLink href="/static" />
       <a href="/static">/static - web link</a>
       <DebugLink href="/nested-layout" />
+      <DebugLink href="/with-fetch/static" />
     </main>
   );
 }

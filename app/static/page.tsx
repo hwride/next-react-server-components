@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { DebugLink } from "@/components/DebugLink";
 
 export default function Test1Page() {
@@ -9,6 +8,7 @@ export default function Test1Page() {
       </div>
       <div>{new Date().toISOString()}</div>
       <DebugLink href="/" />
+      {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
       <a href="/">/ - web link</a>
     </div>
   );
